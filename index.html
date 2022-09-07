@@ -12,7 +12,7 @@
 
 	<main>
 	    <form action="" class="formulario" id="formulario"></form>
-                  <!--formulario 1-->
+                  <!--formulario 1 GRUPO USUARIO-->
                 <div class="formulario__grupo" id="grupo__usuario">
                      <label for="usuario" class="formulario__label">Usuario</label>
                       <div class="formulario__grupo-input">
@@ -22,7 +22,7 @@
                       <p class="formulario__input-error">El tiene que ser de 4 a 16 digitos y solo puede tener numeros, letras y guión bajo.</p>
                 </div>
 
-                <!--formulario 2-->
+                <!--formulario 2 GRUPO NOMBRE-->
 
                 <div class="formulario__grupo" id="grupo__nombre">
                      <label for="nombre" class="formulario__label">Nombre</label>
@@ -31,9 +31,18 @@
                            <i class=" formulario__validacion-estado fas fa-times-circle"></i>
                       </div>  
                       <p class="formulario__input-error">Tiene que ser de 4 a 12 digitos.</p>
-                </div>	
+                </div>
 
-                <!--formulario 3-->
+            <!--formulario 3 GRUPO APELLIDO-->
+                      <div class="formulario__grupo" id="grupo__apellido">
+                     <label for="apellido" class="formulario__label">Apellido</label>
+                      <div class="formulario__grupo-input">
+                           <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="apellido">
+                           <i class=" formulario__validacion-estado fas fa-times-circle"></i>
+                      </div>  
+                      <p class="formulario__input-error">Tiene que ser de 4 a 12 digitos.</p>
+                </div>   
+            <!--formulario 4 GRUPO CONTRASEÑA-->
 
                 <div class="formulario__grupo" id="grupo__password">
                      <label for="password" class="formulario__label">Contraseña</label>
@@ -43,7 +52,7 @@
                       </div>  
                       <p class="formulario__input-error">El tiene que ser de 4 a 12 digitos.</p>
 
-                      <!--formulario 4-->
+                      <!--formulario 4 GRUPO REPETIR CONTREASEÑA-->
 
 
                 <div class="formulario__grupo" id="grupo__password2">
@@ -54,7 +63,7 @@
                       </div>  
                       <p class="formulario__input-error">Ambas contraseñas tienen que ser iguales.</p>
 
-                      <!--formulario 5-->
+                      <!--formulario 5 GRUPO CORREO ELECTRONICO-->
 
 
                 <div class="formulario__grupo" id="grupo__correo">
@@ -65,23 +74,46 @@
                       </div>  
                       <p class="formulario__input-error">El correo solo debe contener letras, numeros puntos y guion bajo.</p>
 
-                     <!--formulario 6-->
+                      <!--formulario 5 GRUPO CORREO ELECTRONICO-2-->
+
+
+                <div class="formulario__grupo" id="grupo__correo2">
+                     <label for="correo2" class="formulario__label">Repetir Correo Electronico</label>
+                      <div class="formulario__grupo-input">
+                           <input type="email" class="formulario__input" name="correo2" id="correo2" placeholder="correo@.com">
+                           <i class=" formulario__validacion-estado fas fa-times-circle"></i>
+                      </div>  
+                      <p class="formulario__input-error">El correo solo debe contener letras, numeros puntos y guion bajo.</p>
+
+
+
+                     <!--formulario 6 Telefono-->
 
                 <div class="formulario__grupo" id="grupo__telefono">
-                     <label for="telefono" class="formulario__label">Telefono</label>
+                     <label for="telefono" class="formulario__label">Teléfono</label>
                       <div class="formulario__grupo-input">
                            <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="+54000000000">
                            <i class=" formulario__validacion-estado fas fa-times-circle"></i>
                       </div>  
                       <p class="formulario__input-error">El telefono solo puede contener numeros y maximo 14 digitos</p>
-			
-			<!--terminos y condiciones-->
+
+                      <!--terminos y condiciones-->
                       <div class="formulario__grupo" id="grupo__terminos">
                          <label class="formulario__label">
                               <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
                               Acepto Terminos y Condiciones
                          </label>
                       </div>
+
+                      <div class="formulario__mensaje" id="formulario__mensaje">
+                           <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por rellene el formulario correctamente.</p>
+                      </div>
+
+                      <div class="formulario__grupo formulario__grupo-btn-enviar">
+                           <button type="submit" class="formulario__btn">Enviar</button>
+                           <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                      </div>
+                           
 	</main>
 
 	<script src="js/formulario.js"></script>
